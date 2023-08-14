@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi práctica de CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/border-style-solid.css' rel='stylesheet'>
+</head>
+<body>
+   <div class="form-container">
+     <form action="#" method="POST">
+       <div class="form-container 1">
+       <label for="nombre" id="nombre">Introduce tu nombre: </label>
+       <input type="text" id="nombre" placeholder="Nombre.."/>
+       </div>
+       <div class="form-container 2">
+       <label for="nombre" id="nombre">Introduce tu nombre: </label>
+       <input type="text" id="apellidos" placeholder="Apellidos.."/>
+       </div>
+       <div class="form-container 3">
+         <label for "menu"> Elige tu menú: </label>
+         <div class="form-container 3__opt">
+           <label for "carne"> Carne! </label>
+           <input type="checkbox" id="menu-carne"/>
+           <label for "pescado"> Pescado! </label>
+           <input type="checkbox" id="menu-pescado"/>
+           <label for "vegano"> Vegano! </label>
+           <input type="checkbox" id="menu-vegano"/>
+           <label for "vegetariano"> Vegetariano! </label>
+           <input type="checkbox" id="menu-vegetariano"/>
+         </div>
+       </div>
+       <div class="form-container 4">
+         <label for="intolerancia"> Marcar para intolerancias </label>
+         <input type="checkbox" class="into-check">
+         <textarea class="intolerancia" id="intolerancia" style="display:none">Escribe aquí.. </textarea>
+</body>
+</html>
