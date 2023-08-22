@@ -1,125 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi práctica de CSS</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/border-style-solid.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Test</title>
 </head>
 <body>
-    <div class="top-container">
-        <img src="images/MIGUEL_Y_ANA_2.jpg" alt="Nuestra boda" class="top-container__img">
-        <div class="titulo">
-            <div class="titulo-img">
-                <img src="images/MIGUEL_Y_ANA__1_-removebg-preview.png" alt="">
-            </div>
-        </div>
-        <nav>
-            <ul class="nav-list">
-                <li class="nav-list-inicio"><a href="">Inicio</a></li>
-                <li class="nav-list-invitacion"><a href="">Invitación</a></li>
-                <li class="nav-list-mapa"><a href="">Mapa</a></li>
-            </ul>
-        </nav>
-        <p class="titulo-fecha">
-            ¡Nos casamos en.. !
-        </p>
+    <!-- background and navigation -->
+  <header>
+      <img src="images/MIGUEL_Y_ANA__1_-removebg-preview.png" class="header-logo-container" alt="">
+    <div class="header-nav">
+      <ul class="header-nav-ul">
+        <li class="header-nav-ul-li-1"><a href="#">Hola</a></li>
+        <li class="header-nav-ul-li-2"><a href="#">Hola</a></li>
+        <li class="header-nav-ul-li-3"><a href="#">Hola</a></li>
+      </ul>
     </div>
-      <div class="form-main">
-   <div class="food-opt">
-    <section class="app">
-    <i class="fa fa-heart"></i>
-    <h1>Elige <span class="blue-color">el menu</span></h1>
-    <h3 class="gray-color">A continuacion podras elegir entre los distintos menus para la boda</h3>
-    <article class="feature1">
-      <input type="checkbox" id="feature1"/>
-      <div>
-        <span>
-          Carne: <br/>
-          Solomillo con papas
-        </span>
-      </div>
-    </article>
-
-    <article class="feature2">
-      <input type="checkbox" id="feature2"/>
-      <div>
-        <span>
-          Pescado: <br/>
-          Lubina con papas (sancochadas)
-        </span>
-      </div>
-    </article>
-
-    <article class="feature3">
-      <input type="checkbox" id="feature3"/>
-      <div>
-        <span>
-          Vegan: <br/>
-          Filete tofu y papas (sancochadas)
-        </span>
-      </div>
-    </article>
-
-    <article class="feature4">
-      <input type="checkbox" id="feature4" checked/>
-      <div>
-        <span>
-          Veggie<br/>
-          Filete espinacas con papa (sancochadas)
-        </span>
-      </div>
-    </article>
-  </section>
-  </div>
-   <div class="form-container">
-     <!--<div class="form-container-side">
-       <p> Invitacion a nuestra boda</p>
-       <div class="form-container-side-img"></div>
-       <img src="#" />
-     </div>
-     -->
-     <form action="#" method="POST">
-       <div class="form-container-title">
-       <i class="fa fa-heart"></i>
-    <h1>Escribe <span class="blue-color">tus datos</span></h1>
-    <h3 class="gray-color">Asi te guardaremos un puestito en nuestra boda</h3>
-       </div>
-       <div class="form-container-1-2">
-                <div class="form-container-1">
-       <input type="text" id="nombre" placeholder="Nombre"/>
-       </div>
-       <div class="form-container-2">
-       <input type="text" id="apellidos" placeholder="Apellidos"/>
-       </div>
-       </div>
-       <div class="form-container-3">
-         <label for="intolerancia"> Marcar para intolerancias </label>
-         <input type="checkbox" class="into-check">
-         <textarea class="intolerancia" id="intolerancia">Escribe aquí.. </textarea>
-       </div>
-       </div>
-   <div class="form-btn">
-        <a href="#" class="upgrade-btn">Upgrade</a>
-   </div>
-  </div>
-    <article class="second-content-body">
-        <div class="galeria-imagenes">
-            <img src="imagen-prueba.png" alt="">
-            <img src="imagen-prueba.png" alt="">
-            <img src="imagen-prueba.png" alt="">
-            <img src="imagen-prueba.png" alt="">
-            <img src="imagen-prueba.png" alt="">
-            <img src="imagen-prueba.png" alt="">
+    <div class="header-content">
+      <p>Cuenta atras!</p>
+    </div>
+  </header>
+  <!-- form and pictures -->
+  <article>
+    <img src="images/MIGUEL_Y_ANA-removebg-preview.png" alt="">
+    <div class="article-main-title">
+      <h1> 💐 Confirma tu asistencia 💐</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eaque unde molestias non alias hic!</p>
+    </div>
+    <div class="article-main-form">
+      <p>Introduce tus datos: </p>
+      <!--comienzo formulario-->
+      <form action="#" method="GET" class="article-main-form__form">
+        <div class="article-main-form__form-space1">
+          <label for="nombre">Nombre: </label>
+          <input type="text" name="nombre" id="nombre">
         </div>
+        <div class="article-main-form__form-space2">
+          <label for="apellidos">Apellidos: </label>
+          <input type="text" name="apellidos" id="apellidos">
+        </div>
+        <div class="article-main-food">
+          <p>Elige el tipo de menu: </p>
+          <div class="article-main-food-opt">
+            <input type="checkbox" name="carne" id="carne">
+            <input type="checkbox" name="pescado" id="pescado">
+            <input type="checkbox" name="vegetariano" id="vegetariano">
+            <input type="checkbox" name="vegano" id="vegano">
+          </div>
+        </div>
+        <div class="article-main-form__form-space3">
+          <button>Aceptar</button>
+        </div>
+      </form>
+      <!--fin formulario-->
+    </div>
+  </article>
+
+  <!-- imagenes y mapa -->
+  <footer>
+    <article>
+      <div class="footer-article-main-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14091.708728980942!2d-15.431266241344911!3d27.996124161464035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4097efa65f67f5%3A0xccca05a89836c80a!2sTelde%2C%20Las%20Palmas%2C%20Spain!5e0!3m2!1sen!2snl!4v1692729188951!5m2!1sen!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="footer-article-main-carousel">
+        <img src="images/imagen-prueba.png" alt="">
+        <img src="images/imagen-prueba.png" alt="">
+        <img src="images/imagen-prueba.png" alt="">
+        <img src="images/imagen-prueba.png" alt="">
+        <img src="images/imagen-prueba.png" alt="">
+        <img src="images/imagen-prueba.png" alt="">
+      </div>
     </article>
-    <article class="third-content-body">
-        aquí va el mapa
-    </article>
-    <footer>
-        
-    </footer>
+  </footer>
 </body>
 </html>
