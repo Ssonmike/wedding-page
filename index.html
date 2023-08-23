@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
   <title>Test</title>
 </head>
 <body>
@@ -23,55 +26,65 @@
   </header>
   <!-- form and pictures -->
   <article>
-    <img src="images/MIGUEL_Y_ANA-removebg-preview.png" alt="">
-    <div class="article-main-title">
-      <h1> 💐 Confirma tu asistencia 💐</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eaque unde molestias non alias hic!</p>
-    </div>
-    <div class="article-main-form">
-      <p>Introduce tus datos: </p>
-      <!--comienzo formulario-->
-      <form action="#" method="GET" class="article-main-form__form">
-        <div class="article-main-form__form-space1">
-          <label for="nombre">Nombre: </label>
-          <input type="text" name="nombre" id="nombre">
+    <section class="section-submain">
+      <div class="section-submain-map">
+        <img src="images/undraw_map_re_60yf.svg" alt="">
+        <div class="section-submain-map__text">
+          <h2>Emplazamiento</h2>
+          <p>Mas abajo podras consultar en un mapa la localizacion exacta de la boda, no te pierdas!</p>
         </div>
-        <div class="article-main-form__form-space2">
-          <label for="apellidos">Apellidos: </label>
-          <input type="text" name="apellidos" id="apellidos">
+      </div>
+      <div class="section-submain-area">
+        <img src="images/undraw_trip_re_f724.svg" alt="">
+        <div class="section-submain-area__text">
+          <h2>Lugares de interes</h2>
+          <p>Te mostraremos algunos sitios para que puedas visitarlos con tu familia mientras nos esperas!</p>
         </div>
-        <div class="article-main-food">
-          <p>Elige el tipo de menu: </p>
-          <div class="article-main-food-opt">
-            <input type="checkbox" name="carne" id="carne">
-            <input type="checkbox" name="pescado" id="pescado">
-            <input type="checkbox" name="vegetariano" id="vegetariano">
-            <input type="checkbox" name="vegano" id="vegano">
+      </div>
+      <div class="section-submain-vuelos">
+        <img src="images/undraw_aircraft_re_m05i.svg" alt="">
+        <div class="section-submain-vuelos__text">
+          <h2>Plan de vuelos</h2>
+          <p>Para los que vuelan mostraremos los mejores precios de las aerolineas y hoteles segun las fechas!</p>
+        </div>
+      </div>
+    </section>
+    <section class="section-main">
+      <img class="hombre-nespresso" src="images/undraw_drink_coffee_v3au.svg" alt="">
+      <img class="mujer-nespresso" src="images/undraw_coffee_time_e8cw.svg" alt="">
+      <div class="section-main-title">    
+        <h1>Confirma tu asistencia</h1>
+      </div>
+      <div class="section-main-form">
+        <p>Introduce tus datos: </p>
+        <!--comienzo formulario-->
+        <form action="#" method="GET" class="section-main-form__form">
+          <div class="section-main-form__form-space1">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre">
           </div>
-        </div>
-        <div class="article-main-form__form-space3">
-          <button>Aceptar</button>
-        </div>
-      </form>
-      <!--fin formulario-->
-    </div>
-  </article>
+          <div class="section-main-form__form-space2">
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" name="apellidos" id="apellidos">
+          </div>
+          <div class="section-main-food">
+            <p>Elige el tipo de menu: </p>
+            <div class="section-main-food-opt">
+              <input type="checkbox" name="carne" id="carne">
+              <input type="checkbox" name="pescado" id="pescado">
+              <input type="checkbox" name="vegetariano" id="vegetariano">
+              <input type="checkbox" name="vegano" id="vegano">
+            </div>
+          </div>
+          <div class="section-main-form__form-space3">
+            <button>Aceptar</button>
+          </div>
+        </form>
+        <!--fin formulario-->
+      </div>
+    </section>
+    <!-- imagenes y mapa -->
 
-  <!-- imagenes y mapa -->
-  <footer>
-    <article>
-      <div class="footer-article-main-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14091.708728980942!2d-15.431266241344911!3d27.996124161464035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4097efa65f67f5%3A0xccca05a89836c80a!2sTelde%2C%20Las%20Palmas%2C%20Spain!5e0!3m2!1sen!2snl!4v1692729188951!5m2!1sen!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div class="footer-article-main-carousel">
-        <img src="images/imagen-prueba.png" alt="">
-        <img src="images/imagen-prueba.png" alt="">
-        <img src="images/imagen-prueba.png" alt="">
-        <img src="images/imagen-prueba.png" alt="">
-        <img src="images/imagen-prueba.png" alt="">
-        <img src="images/imagen-prueba.png" alt="">
-      </div>
-    </article>
-  </footer>
+  </article>
 </body>
 </html>
