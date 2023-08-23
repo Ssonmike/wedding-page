@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Vollkorn&display=swap');
 *{
   box-sizing: border-box;
-  margin: 0;
+  margin: 0;  
 }
 @media screen and (max-width:500px){
   /* organizando el header y el nav */
+  body{}
   header{
-    height: 600px;
+    font-family: 'Satisfy';
+    height: 100vh;
     background: url(images/MIGUEL_Y_ANA_2.jpg);
     background-position: top;
     background-size: cover;
@@ -65,37 +68,54 @@
     align-self: center;
     font-size: 25px;
   }
-  article{
-    height: 600px;
+  .section-main{
+    font-family: 'Vollkorn';
+    height: 80vh;
     position: relative;
     display: grid;
-    padding: 15px
+    padding: 15px;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;
   }
-  article img{
-    height: 150px;
+  .mujer-nespresso{
+    height: 70px;
     position: absolute;
-    opacity: 0.6;
-    bottom: 0;
+    left: 40px;
+    top: 50px;
   }
-  .article-main-title{
+  .hombre-nespresso{
+    height: 70px;
+    position: absolute;
+    right: 40px;
+    top: 50px
+  }
+  .section-main-title{
     height: 110px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    gap: 15px;
+    position: relative;
   }
-  .article-main-form{
+  .section-main-form{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
     height: 400px;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 25px;
-    border: 1px solid black;
-    box-shadow: 1px 1px 5px #CCB195;
+    box-shadow: 5px 5px 5px rgb(253, 239, 251);;
     border-radius: 5px;
     /* align-items: center; */
     padding: 15px;
+    border: 1px solid lightgrey;
+  }
+  .section-main-form p{
+    font-weight: 800;
+    margin: auto;
   }
   form{
     width: 100%;
@@ -104,24 +124,25 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
     gap: 10px;
+
   }
-  .article-main-form__form-space1{
+  .section-main-form__form-space1{
     display: grid;
     gap: 10px;
     grid-row: 1/2;
   }
-  .article-main-form__form-space2{
+  .section-main-form__form-space2{
     display: grid;
     gap: 10px;
     grid-row: 2/3;
   }
-  .article-main-food{
+  .section-main-food{
     height: 80px;
     display: grid;
     gap: 15px;
     grid-row: 3/5;
   }
-  .article-main-food-opt{
+  .section-main-food-opt{
     width: 100%;
     height: 100%;
     display: grid;
@@ -145,16 +166,109 @@
     grid-column: 2/2;
     grid-row: 2/2;
   }
-  .article-main-form__form-space3{
+  .section-main-form__form-space3{
     grid-row: 5/6;
   }
   button{
     width: 100%;
     height: 40px;
+    font-weight: 800;
+    border: 1px solid lightgrey;
     border-radius: 5px;
+    background: rgb(253, 239, 251);
+/*     background: rgb(204,149,195);
+    background: linear-gradient(107deg, rgba(204,149,195,1) 0%, rgba(255,255,255,1) 92%) */;
   }
   input[type=text]{
     height: 40px;
     border-radius: 5px;
+    font-weight: 600;
+    border: 1px solid lightgrey;
+  }
+  input[type=checkbox]{
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 15px;
+    border-radius: 3px;
+    width: 10px;
+    position: relative;
+  }
+  input[type=checkbox]:checked{
+    background-color: #e9ecee;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    color: #99a1a7;
+  }
+  input[type=checkbox]:active, input[type=checkbox]:checked:active{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+  }
+  input[type=checkbox]:checked:after{
+    content: '\2714';
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    left: 7px;
+    color: #99a1a7;
+  }
+  .section-submain{
+    margin-top: 50px;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    padding: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url(images/layered-waves-haikei.svg);
+    background-size:cover;
+  }
+  .section-submain-map{
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-submain-map__text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section-submain-map img{
+    height: 120px;
+    justify-self: center;
+  }
+  .section-submain-area{
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-submain-area__text{
+    grid-column: 1/2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section-submain-area img{
+    height: 120px;
+    border-radius: 30%;
+    grid-column: 2/2;
+    justify-self: center;
+  }
+  .section-submain-vuelos{
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-submain-vuelos__text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section-submain-vuelos img{
+    height: 120px;
+    border-radius: 30%;
+    width: 200px;
   }
 }
