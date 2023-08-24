@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Vollkorn&display=swap');
 *{
   box-sizing: border-box;
-  margin: 0;  
+  margin: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 @media screen and (max-width:500px){
   /* organizando el header y el nav */
-  body{}
   header{
-    font-family: 'Satisfy';
+    font-family: 'Vollkorn';
     height: 100vh;
     background: url(images/MIGUEL_Y_ANA_2.jpg);
     background-position: top;
@@ -70,7 +71,7 @@
   }
   .section-main{
     font-family: 'Vollkorn';
-    height: 80vh;
+    height: 70vh;
     position: relative;
     display: grid;
     padding: 15px;
@@ -176,8 +177,6 @@
     border: 1px solid lightgrey;
     border-radius: 5px;
     background: rgb(253, 239, 251);
-/*     background: rgb(204,149,195);
-    background: linear-gradient(107deg, rgba(204,149,195,1) 0%, rgba(255,255,255,1) 92%) */;
   }
   input[type=text]{
     height: 40px;
@@ -270,5 +269,148 @@
     height: 120px;
     border-radius: 30%;
     width: 200px;
+  }
+  .section-multimedia{
+    height: 300vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    gap: 35px;
+  }
+  .section-multimedia-map{
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 25px;
+    grid-row: 1/2;
+  }
+  .section-multimedia-map-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/stacked-peaks-haikei.svg);
+    background-size: cover;
+  }
+  .section-multimedia-map-container img{
+    
+    height: 100px;
+    grid-row: 1/2;
+  }
+  .section-multimedia-map iframe{
+    height: 100%;
+    width: 100%;
+    grid-row: 2/5;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+  }
+  .section-multimedia-caroussel{
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    grid-row: 2/3;
+    gap: 65px;
+  }
+  .section-multimedia-caroussel-slider-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+  .section-multimedia-caroussel-slider-1-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background: url(images/stacked-peaks-haikei.svg);
+    background-size: cover;
+  }
+  .section-multimedia-caroussel-slider-1-text img{
+    height: 100px;
+  }
+  .section-multimedia-caroussel-slider-1-img{
+    height: 400px;
+    aspect-ratio: 10/16;
+    width: 90%;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  .section-multimedia-caroussel-slider-1-img img{
+    width: 100%;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+  }
+  .section-multimedia-caroussel-slider-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+  .section-multimedia-caroussel-slider-2-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background: url(images/stacked-peaks-haikei.svg);
+    background-size: cover;
+  }
+  .section-multimedia-caroussel-slider-2-text img{
+    height: 100px;
+  }
+  .section-multimedia-caroussel-slider-2-img{
+    height: 400px;
+    aspect-ratio: 10/16;
+    width: 90%;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  .section-multimedia-caroussel-slider-2-img img{
+    width: 100%;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+  }
+  .section-multimedia-caroussel-slider-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+  .section-multimedia-caroussel-slider-3-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background: url(images/stacked-peaks-haikei.svg);
+    background-size: cover;
+  }
+  .section-multimedia-caroussel-slider-3-text img{
+    height: 100px;
+  }
+  .section-multimedia-caroussel-slider-3-img{
+    height: 400px;
+    aspect-ratio: 10/16;
+    width: 90%;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  .section-multimedia-caroussel-slider-3-img img{
+    width: 100%;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
   }
 }
