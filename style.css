@@ -3,9 +3,6 @@
     margin: 0;
 }
 @media only screen and (max-width:700px) {
-    body{
-        background: rgb(236, 236, 236);
-    }
     header{
         height: 100vh;
         position: relative;
@@ -73,12 +70,13 @@
         z-index: -1;
         object-fit: cover;
         width: 100%;
-        height: 92vh;
+        height: 100vh;
     }
     .header-main-content-text{
         color: white;
     }
     .time{
+        background: rgb(250, 250, 250);
         height: 80vh;
         width: 100%;
         display: grid;
@@ -87,10 +85,7 @@
     }
     .time-title{
         grid-row: 1/2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
     }
     .time-js{
         grid-row: 2/4;
@@ -199,5 +194,140 @@
         position: absolute;
         z-index: -1;
         opacity: ;
+    }
+    .ourstory{
+        background-color: white;
+        height: 240vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        position: relative;
+    }
+    .ourstory-container{
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .ourstory-container-line{
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .ourstory-container-line img{
+        width: 100%;
+    }
+    .ourstory-container-content{
+        grid-column: 2/4;
+        padding-right: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        padding-top: 30px;
+    }
+    .ourstory-container-content-1, .ourstory-container-content-2, .ourstory-container-content-3, .ourstory-container-content-4 {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .ourstory-container-content img{
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .bestmoments{
+        height: 60vh;
+        background: rgb(248, 248, 248);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .bestmoments-caroussel{
+        aspect-ratio: 5/4;
+        width: 300px;
+        position: relative;
+        display: flex;
+        overflow: scroll;
+        scroll-snap-type: x mandatory;
+    }
+    .bestmoments-caroussel img{
+        width: 100%;
+        left: 0;
+        position: sticky;
+        object-fit: cover;
+        border-radius: 5px;
+        scroll-snap-align: center;
+    }
+    .bestfriends{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }    
+    .bestfriends h1{
+        border-bottom: 1px solid lightgrey;
+        width: 80%;
+        display: flex;
+        padding: 15px;
+        justify-content: center;
+    }
+    .bestfriends-container{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        gap: 50px;
+    }
+    .bestfriends-container-1, .bestfriends-container-2, .bestfriends-container-3, .bestfriends-container-4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+    .bestfriends-container img{
+        width: 100%;
+        clip-path: circle(48%);
+    }
+    .buenavibra{
+        height: 80vh;
+        width: 100%;
+        position: relative;
+        background: rgba(76, 175, 80, 0.6);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .buenavibra h3, p{
+        padding: 30px;
+    }
+    .buenavibra img{
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        opacity: .8;
+        z-index: -1;
+    }
+    .nuestroblog{
+        height: 140vh;
+        width: 100%;
+        display: flex;
+        padding-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nuestroblog-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
     }
 }
