@@ -53,7 +53,7 @@
     }
     .header-main-nav-container img:hover + .header-main-nav-ul{
         top: 78px;
-        height: 50vh;
+        height: auto;
         width: 100%;
         background: hsl(0, 0%, 100%, .9);
     }
