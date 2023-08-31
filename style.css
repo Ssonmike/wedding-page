@@ -3,6 +3,9 @@
     margin: 0;
 }
 @media only screen and (max-width:700px) {
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
     header{
         height: 100vh;
         position: relative;
@@ -73,7 +76,18 @@
         height: 100vh;
     }
     .header-main-content-text{
+        font-family: 'Italianno', cursive;
         color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-main-content-text-nuestro{
+        font-size: 40px;
+    }
+    .header-main-content-text-casamos{
+        font-size: 70px;
     }
     .time{
         background: rgb(250, 250, 250);
@@ -85,6 +99,14 @@
     }
     .time-title{
         grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .time-title-fecha{
+        font-family: 'Italianno';
+        font-size: 45px;
 
     }
     .time-js{
@@ -145,11 +167,14 @@
     }
     .portrait-miguel img{
         height: 38vh;
+        width: 100%;
         object-fit: cover;
-        clip-path: circle(48%);
+        clip-path: circle(44%);
+        object-position: right;
         margin-top: 30px;
     }
     .portrait-nombres{
+        font-family: 'Italianno';
         grid-row: 2/3;
         display: flex;
         flex-direction: column;
@@ -157,6 +182,7 @@
         justify-content: center;
         align-items: center;
         font-size: 45px;
+        font-weight: 100;
     }
     .portrait-ana{
         grid-row: 3/4;
@@ -166,8 +192,10 @@
     }
     .portrait-ana img{
         height: 38vh;
+        width: 100%;
         object-fit: cover;
-        clip-path: circle(48%);
+        clip-path: circle(44%);
+        object-position: left;
         margin-bottom: 30px;
     }
     .together{
@@ -186,7 +214,14 @@
         align-items: center;
         justify-items: center;
         padding: 30px;
-       }
+    }
+    .inv{
+        width: 60%;
+        border: none;
+        background: white;
+        padding: 15px;
+        font-family: 'Poppins';
+    }
     .together > img{
         width: 100%;
         height: 100%;
@@ -208,6 +243,7 @@
         height: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 75px;
     }
     .ourstory-container-line{
         grid-column: 1/2;
@@ -230,6 +266,13 @@
         display: flex;
         flex-direction: column;
         gap: 25px;
+    }
+    .ourstory-container-content-1-title{
+        font-family: 'Italianno';
+        font-size: 45px;
+    }
+    .ourstory-container-content-1-date{
+        color: darkgreen;
     }
     .ourstory-container-content img{
         width: 100%;
@@ -305,7 +348,7 @@
         flex-direction: column;
         justify-content: center;
     }
-    .buenavibra h3, p{
+    .buenavibra h3{
         padding: 30px;
     }
     .buenavibra img{
@@ -315,6 +358,15 @@
         height: 100%;
         opacity: .8;
         z-index: -1;
+    }
+    .buenavibra-container p{
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+    }
+    .buenavibra-container-name{
+        font-family: 'Italianno';
+        font-size: 40px;
     }
     .nuestroblog{
         height: 140vh;
@@ -329,5 +381,92 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         width: 100%;
+    }
+    .invitacion{
+        height: 120vh;
+        display: flex;
+    }
+    .invitacion-container{
+        padding: 25px;
+        width: 80%;
+        margin: auto;
+        height: 90%;
+        border-radius: 10px;
+        box-shadow: 1px 2px 7px 1px lightgrey;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .invitacion-container-title-title{
+        font-family: 'Italianno';
+        font-size: 60px;
+    }
+    .invitacion-container-title-gris{
+        font-family: 'Poppins';
+        font-size: 15px;
+        color: darkgrey;
+    }
+    .invitacion-container-title{
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .invitacion-container-form{
+        display: flex;
+        flex-direction: column;
+        grid-row: 2/4;
+        gap: 5px;
+    }
+    form input[type=text], input[type=email], select, textarea{
+        padding: 15px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: none;
+        letter-spacing: 0px;
+        font-weight: 400;
+        color: #808080;
+        background-color: #FFFFFF;
+    }
+    .invitacion-container-btn-container{
+        grid-row: 4/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .invitacion-container-btn-container button{
+        padding: 15px;
+        width: 60%;
+        padding: 15px;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: none;
+        letter-spacing: 0px;
+        font-weight: 400;
+        color: #808080;
+        background-color: #FFFFFF;
+    }
+    .footer{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .copyright{
+        padding: 15px;
+        text-align: center;
+    }
+    .rrss{
+        padding: 15px;
+        text-align: center;
     }
 }
