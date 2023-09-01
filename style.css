@@ -52,7 +52,7 @@
         text-decoration: none;
         border-bottom: 1px solid black;
         color: black;
-        font-family: sans-serif;
+        font-family: 'Poppins';
     }
     .header-main-nav-container img:hover + .header-main-nav-ul{
         top: 78px;
@@ -64,9 +64,19 @@
         position: relative;
         height: 80vh;
         width: 100%;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 5rem;
+    }
+    .header-main-content-btn{
+        padding: 10px;
+        width: 150px;
+        font-family: 'Poppins';
+        border: none;
+        background: white;
+        border-radius: 5px;
     }
     .header-main-content img{
         position: absolute;
@@ -382,7 +392,7 @@
         grid-template-rows: repeat(3, 1fr);
         width: 100%;
     }
-    .invitacion{
+    .localizacion{
         height: 120vh;
         display: flex;
     }
@@ -394,6 +404,18 @@
         border-radius: 10px;
         box-shadow: 1px 2px 7px 1px lightgrey;
         display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .invitacion-container-ext{
+        padding: 25px;
+        width: 80%;
+        margin: auto;
+        height: 90%;
+        border-radius: 10px;
+        box-shadow: 1px 2px 7px 1px lightgrey;
+        display: grid;
+        background: white;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
     }
@@ -437,8 +459,11 @@
     .invitacion-container-btn-container{
         grid-row: 4/5;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 20px;
+        margin-top: 15px;
     }
     .invitacion-container-btn-container button{
         padding: 15px;
