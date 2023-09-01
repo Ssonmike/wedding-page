@@ -5,6 +5,7 @@
 @media only screen and (max-width:700px) {
     body{
         font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
     }
     header{
         height: 100vh;
@@ -493,5 +494,25 @@
     .rrss{
         padding: 15px;
         text-align: center;
+    }
+    .invitado-extra{
+        height: auto;
+        visibility: hidden;
+    }
+    .invitado-extra-container-1{
+        padding: 25px;
+        width: 80%;
+        margin: auto;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 1px 2px 7px 1px lightgrey;
+        display: grid;
+        background: white;
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .invitacion-container-btn:focus + .invitado-extra{
+        visibility: visible;
     }
 }
